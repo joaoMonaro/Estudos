@@ -1,0 +1,33 @@
+/* seletor universal */
+*{
+    margin: 5px;    
+    padding: 0%;
+}
+
+hr{
+    margin: 30px;
+}
+
+/* seletor de filho */
+li > a{
+    color: red;        
+}
+
+/* seletor de descendentes */
+/* não precisam ser diretamente filhos, basta estar dentro da estrutura */
+li a{
+    /* color: green; */
+    text-decoration: none;
+}
+
+/* seletor para o 'irmão adjacente' */
+/* apenas aplicado ao elemento posterior especificado */
+h1+p{
+    color: red;
+}
+
+/* seletor de irmão geral */
+/* baste que seja irmão do que foi especificado - ("não se limita a 1") */
+h1~p{
+    color: pink;
+}
